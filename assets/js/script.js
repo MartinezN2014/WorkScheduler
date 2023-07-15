@@ -17,12 +17,12 @@ function hourTracker() {
     console.log("currentHour " + currentHour);
     console.log("time-block " + schedulehHour);
 
-    if (schedulehHour < currentHour) {
-      $(this).addClass("past");
-    } else if (schedulehHour == currentHour) {
-      $(this).addClass("present");
-    } else {
+    if (schedulehHour > currentHour) {
       $(this).addClass("future");
+    } else if (schedulehHour < currentHour) {
+      $(this).addClass("past");
+    } else {
+      $(this).addClass("present");
     }
   });
 }
@@ -36,7 +36,6 @@ $(".saveBtn").on("click", function () {
 });
 
 //pulls the value from the localestorage and place them back on the page after refresh//
-$("#hour8 .description").val(localStorage.getItem("hour8"));
 $("#hour9 .description").val(localStorage.getItem("hour9"));
 $("#hour10 .description").val(localStorage.getItem("hour10"));
 $("#hour11 .description").val(localStorage.getItem("hour11"));
