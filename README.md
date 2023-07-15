@@ -24,8 +24,8 @@ Built With
     I learned how to use Day.js library.
     Learned basic coding using Jquery and navigate the Jquery library
 
-[Github] (./assets/images/RepoImg.jpg)
-[WorkDayScheduler] (./assets/images/schedulerImg.jpg)
+![Github](./assets/images/RepoImg.jpg)
+![WorkDayScheduler](./assets/images/schedulerImg.jpg)
 
 https://github.com/MartinezN2014/WorkScheduler
 
