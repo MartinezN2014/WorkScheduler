@@ -17,9 +17,9 @@ function hourTracker() {
     console.log("currentHour " + currentHour);
     console.log("time-block " + schedulehHour);
 
-    if (schedulehHour > currentHour) {
+    if (+schedulehHour > +currentHour) {
       $(this).addClass("future");
-    } else if (schedulehHour < currentHour) {
+    } else if (+schedulehHour < +currentHour) {
       $(this).addClass("past");
     } else {
       $(this).addClass("present");
